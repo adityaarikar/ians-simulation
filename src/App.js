@@ -11,6 +11,7 @@ import Aim from "./pages/Aim";
 import Theory from "./pages/Theory";
 import Execution from "./pages/Execution";
 import About from "./pages/About";
+import Playfair from "./components/Playfair";
 
 function App() {
   const [open, setOpen] = useState(false);
@@ -34,7 +35,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Aim />} />
           <Route path="/theory" element={<Theory />} />
-          <Route path="/execution" element={<Execution />} />
+          <Route path="/execution" element={<Playfair />} />
           <Route path="/about" element={<About />} />
         </Routes>
       </Router>
